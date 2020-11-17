@@ -11,11 +11,11 @@ import datetime
 import requests
 import re
 from lxml import etree
-from Chatbot_Crawler.weiboID import weiboID
-from Chatbot_Crawler.scrapy_redis.spiders import RedisSpider
+from chatbot_crawler.weiboID import weiboID
+from chatbot_crawler.scrapy_redis.spiders import RedisSpider
 from scrapy.selector import Selector
 from scrapy.http import Request
-from Chatbot_Crawler.items import TweetsItem, InformationItem, RelationshipsItem
+from chatbot_crawler.items import TweetsItem, InformationItem, RelationshipsItem
 
 
 class Spider(RedisSpider):
